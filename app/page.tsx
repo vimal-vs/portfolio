@@ -6,7 +6,9 @@ import Header from "./components/Header.jsx"
 export default function Home() {
   return (
   <>
-    <Cursor />
+    <div className="hidden md:block">
+      <Cursor />
+    </div>
     <Header />
   </>
   )
