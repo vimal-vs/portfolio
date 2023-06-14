@@ -1,5 +1,5 @@
 import projects from '../projectsData.json'
-import { FiArrowUpRight } from "react-icons/fi";
+import Image from 'next/image'
 
 export default function Projects(){
     return (
@@ -10,7 +10,7 @@ export default function Projects(){
                         return(
                             <a id='project' key={ project.id } href="#" className="flex gap-14 mt-6 p-4 hover:text-teal-300 focus-visible:text-teal-300 hover:bg-slate-500 hover:bg-opacity-10 transition-all rounded-md">
                                 <div className="w-3/4 mt-2">
-                                    <img src="https://picsum.photos/seed/picsum/200/100" />
+                                <Image src="/project-image.jpg" width="200" height="100" alt="project-demo-image" />
                                 </div>
                                 <div>
                                     <h3 className="text-lg">{ project.title }
