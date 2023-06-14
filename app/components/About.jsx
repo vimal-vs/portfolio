@@ -6,11 +6,11 @@ export default function About(){
                 </p>
             </div>
             <div className="mt-4 text-lg text-slate-400">
-                <p>I have gained expertise in popular modern frameworks, enabling me to build dynamic and scalable web applications.
+                <p>I have gained expertise in popular modern frameworks, enabling me to build dynamic and scalable web applications. With a background in computer science and engineering, I bring a solid foundation in programming and a knack for problem-solving to every project.
                 </p>
             </div>
             <div className="mt-4 text-lg text-slate-400">
-                <p>With a background in computer science and engineering, I bring a solid foundation in programming and a knack for problem-solving to every project. Let&apos;s connect and discuss how we can create impactful web solutions together.
+                <p>When I&apos;m not centering the divs, I&apos;m usually playing competitive eSports{/*<span className="text-slate-300 cursorEsports hover:text-purple-400">competitive eSports</span>*/}, hanging out with my family, or rocking the <span className="text-slate-300 cursorGuitar hover:text-orange-300 transition-all">guitar</span>.
                 </p>
             </div>
         </>

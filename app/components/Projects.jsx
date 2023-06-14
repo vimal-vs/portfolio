@@ -3,14 +3,14 @@ import Image from 'next/image'
 
 export default function Projects(){
     return (
-        <div id='projects' className="mt-24 scroll-mt-24">
-            <section id="projects-section" className='pages'>
+        <div id="projects" className="lg:mt-24 lg:scroll-mt-24">
+            <section id="projects-section">
                 {
                     projects.map(project => {
                         return(
-                            <a id='project' key={ project.id } href="#" className="flex gap-14 mt-6 p-4 hover:text-teal-300 focus-visible:text-teal-300 hover:bg-slate-500 hover:bg-opacity-10 transition-all rounded-md">
-                                <div className="w-3/4 mt-2">
-                                <Image src="/project-image.jpg" width="200" height="100" alt="project-demo-image" />
+                            <a id='project' key={ project.id } href="#" className="flex flex-col-reverse gap-6 mt-6 lg:flex-row lg:mt-6 lg:gap-14 lg:p-4 hover:text-teal-300 focus-visible:text-teal-300 hover:bg-slate-500 hover:bg-opacity-10 transition-all rounded-md">
+                                <div className="lg:w-3/4 lg:mt-2">
+                                    <Image src="/project-image.jpg" width="200" height="100" alt="project-demo-image" />
                                 </div>
                                 <div>
                                     <h3 className="text-lg">{ project.title }
@@ -18,7 +18,7 @@ export default function Projects(){
                                         <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path>
                                     </svg>
                                     </h3>
-                                    <p className="text-slate-400 mt-3 leading-5">{ project.description }</p>
+                                    <p className="text-slate-400 mt-3 lg:leading-5">{ project.description }</p>
                                 </div>
                             </a>
                         )
