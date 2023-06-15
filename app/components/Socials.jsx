@@ -1,12 +1,12 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { RxResume } from "react-icons/rx";
+import { MdEmail } from "react-icons/md";
 
 export default function Socials(){
     return (
-        <div className="flex gap-7 text-2xl mt-10 lg:mt-80 opacity-70">
-            <a href="https://github.com/vimal-vs" title="Github"><AiFillGithub /></a>
-            <a href="https://www.linkedin.com/in/vimalvs" title="Linkedin"><AiFillLinkedin /></a>
-            <a href="https://drive.google.com/file/d/1RccGMVTcDeDGn1vSLyYR5qzqk4Wc2Dno/view?usp=drive_link" title="Resumé"><RxResume /></a>
+        <div className="flex mt-4 lg:mt-12 xl:mt-20 gap-7 text-2xl">
+            <a className="opacity-70 hover:opacity-100" href="https://github.com/vimal-vs" title="Github"><AiFillGithub /></a>
+            <a className="opacity-70 hover:opacity-100" href="https://www.linkedin.com/in/vimalvs" title="Linkedin"><AiFillLinkedin /></a>
+            <a className="opacity-70 hover:opacity-100" href="mailto:vimalsakkthi@gmail.com" title="Mail"><MdEmail /></a>
         </div>
     )
 }

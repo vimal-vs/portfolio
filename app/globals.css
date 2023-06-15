@@ -38,3 +38,12 @@ html {
 .cursorEsports{
     cursor: url(https://cur.cursors-4u.net/mechanics/mec-5/mec440.cur), auto !important;
 }
+
+.activeSpan{
+    width: 4rem;
+    background-color: rgb(226 232 240 / 1);
+}
+
+.activeText{
+    color: #e2e8f0;
+}

@@ -1,26 +1,60 @@
+"use client"
+
+import { useEffect } from "react"
 import Nav from "./Nav"
 import Socials from "./Socials"
 import Projects from "./Projects"
 import About from "./About"
 import Contact from "./Contact"
 import Footer from "./Footer"
+import Skills from "./Skills"
 
 export default function Header() {
+
+    useEffect(() => {
+        const sections = document.querySelectorAll("section[id]");
+        var sectionId = "about";
+        window.addEventListener("scroll", navHighlighter);
+
+        if (document.querySelector("nav span") && document.querySelector("nav div")){
+            document.querySelector("nav span").classList.add("activeSpan");
+            document.querySelector("nav div").classList.add("activeText");
+        }
+        function navHighlighter() {
+
+            let scrollY = window.scrollY;
+    
+            sections.forEach(current => {
+                const sectionHeight = current.offsetHeight;
+                const sectionTop = current.offsetTop-500;
+                sectionId = current.getAttribute("id");
+                
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+                    document.querySelector("nav a[href*=" + sectionId + "] span").classList.add("activeSpan");
+                    document.querySelector("nav a[href*=" + sectionId + "] div").classList.add("activeText");
+                } 
+                else {
+                    document.querySelector("nav a[href*=" + sectionId + "] span").classList.remove("activeSpan");
+                    document.querySelector("nav a[href*=" + sectionId + "] div").classList.remove("activeText");
+                }
+            });
+            }
+    });
     return (
-        <div className="flex my-12 mx-8 lg:m-auto lg:w-2/3">
-            <div className="flex flex-col lg:flex-row lg:items-start lg:py-24 lg:px-32 lg:gap-24">
-                <div className="lg:sticky lg:top-24 lg:p-2 lg:w-1/2 text-slate-200">
-                    <a href="/" className="text-5xl font-semibold">Vimal Sakkthi</a>
-                    <h3 className="mt-2 text-xl">Student • Web Developer</h3>
-                    <p className="mt-5 text-lg text-slate-400">I build accessible, inclusive products and digital experiences for the web.</p>
+        <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+            <div className="lg:flex lg:justify-between lg:gap-4">
+                <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:py-24">
+                    <a href="/" className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Vimal Sakkthi</a>
+                    <h3 className="mt-2 xl:text-xl">Student • Web Developer</h3>
+                    <p className="mt-5 2xl:text-lg text-slate-400 w-2/3 lg:w-1/2">I build accessible, inclusive products and digital experiences for the web.</p>
                     <div className="hidden lg:block">
                         <Nav />
                     </div>
                     <Socials />
                 </div>
-                <section id="about" className="mt-16 lg:mt-0 lg:sticky lg:w-3/4 lg:p-2 lg:scroll-mt-24">
+                <div className="sticky lg:w-1/2">
                     <div>
-                        <div className="lg:hidden mb-4 uppercase font-semibold">About</div>
+                        <div className="lg:hidden mt-12 uppercase font-semibold">About</div>
                         <About />
                     </div>
                     <div>
@@ -28,13 +62,17 @@ export default function Header() {
                         <Projects />
                     </div>
                     <div>
+                    <div>
+                    <div className="lg:hidden mt-16 uppercase font-semibold">Skills</div>
+                        <Skills />
+                    </div> 
                         <div className="lg:hidden mt-16 mb-4 uppercase font-semibold">Contact</div>
                         <Contact />
                     </div>
-                    <div className="mt-24 lg:mt-0">
+                    <div className="mt-8 lg:mt-0">
                         <Footer />
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     )
