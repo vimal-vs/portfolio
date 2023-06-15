@@ -5,8 +5,8 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Projects(){
     return (
-        <div id="projects" className="lg:mt-24 lg:scroll-mt-24">
-            <section id="projects-section">
+        <section id="projects" className="lg:mt-24 lg:scroll-mt-24">
+            <div id="projects-section">
                 {
                     projects.map(project => {
                         return(
@@ -25,11 +25,11 @@ export default function Projects(){
                         )
                     })
                 }
-            </section>
+            </div>
             <div className="group flex gap-1 mt-12 hover:underline decoration-teal-400 underline-offset-4 transition-all text-lg">
                     <a href="/archive">View Full Project Archive</a>
                     <span className='mt-1 group-hover:translate-x-2 transition-all'><BsArrowRightShort /></span>
             </div>
-        </div>
+        </section>
     )
 }

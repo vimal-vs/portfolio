@@ -2,21 +2,25 @@
     {
         "id" : 1,
         "title" : "About",
-        "href" : "#about"
+        "href" : "#about",
+        "navID" : "about"
     },
     {
         "id" : 2,
         "title" : "Projects",
-        "href" : "#projects"
+        "href" : "#projects",
+        "navID" : "projects"
     },
     {
         "id" : 3,
         "title" : "Skills",
-        "href" : "#skills"
+        "href" : "#skills",
+        "navID" : "skills"
     },
     {
         "id" : 4,
         "title" : "Contact",
-        "href" : "#contact"
+        "href" : "#contact",
+        "navID" : "contact"
     }
 ]
