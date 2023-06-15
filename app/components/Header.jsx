@@ -9,34 +9,35 @@ import Footer from "./Footer"
 import Skills from "./Skills"
 
 export default function Header() {
+    if(document.querySelectorAll("section[id]")){
+        const sections = document.querySelectorAll("section[id]");
+        var sectionId = "about";
+        window.addEventListener("scroll", navHighlighter);
 
-    const sections = document.querySelectorAll("section[id]");
-    var sectionId = "about";
-    window.addEventListener("scroll", navHighlighter);
-
-    if (document.querySelector("nav span") && document.querySelector("nav div")){
-        document.querySelector("nav span").classList.add("activeSpan");
-        document.querySelector("nav div").classList.add("activeText");
-    }
-
-    function navHighlighter() {
-
-    let scrollY = window.scrollY;
-
-    sections.forEach(current => {
-        const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop-150;
-        sectionId = current.getAttribute("id");
-        
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector("nav a[href*=" + sectionId + "] span").classList.add("activeSpan");
-            document.querySelector("nav a[href*=" + sectionId + "] div").classList.add("activeText");
-        } 
-        else {
-            document.querySelector("nav a[href*=" + sectionId + "] span").classList.remove("activeSpan");
-            document.querySelector("nav a[href*=" + sectionId + "] div").classList.remove("activeText");
+        if (document.querySelector("nav span") && document.querySelector("nav div")){
+            document.querySelector("nav span").classList.add("activeSpan");
+            document.querySelector("nav div").classList.add("activeText");
         }
-    });
+
+        function navHighlighter() {
+
+        let scrollY = window.scrollY;
+
+        sections.forEach(current => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop-150;
+            sectionId = current.getAttribute("id");
+            
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+                document.querySelector("nav a[href*=" + sectionId + "] span").classList.add("activeSpan");
+                document.querySelector("nav a[href*=" + sectionId + "] div").classList.add("activeText");
+            } 
+            else {
+                document.querySelector("nav a[href*=" + sectionId + "] span").classList.remove("activeSpan");
+                document.querySelector("nav a[href*=" + sectionId + "] div").classList.remove("activeText");
+            }
+        });
+        }
     }
 
     return (
