@@ -5,7 +5,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Projects(){
     return (
-        <section id="projects" className="lg:mt-24 lg:scroll-mt-24">
+        <section id="projects" className="lg:mt-8 lg:scroll-mt-24">
             <div id="projects-section">
                 {
                     projects.map(project => {

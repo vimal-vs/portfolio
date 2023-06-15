@@ -1,6 +1,6 @@
 export default function About(){
     return (
-        <section id="about" className="lg:py-24 lg:scroll-mt-24">
+        <section id="about" className="mt-6 lg:py-24 lg:scroll-mt-24">
             <div className="text-lg text-slate-400">
                 <p>Back in 2019, I decided to try my hand at creating clones of popular web pages with html/css, which head first into the rabbit hole of coding and web development. Fast-forward to today, I have a deep understanding of web development principles and technologies.
                 </p>

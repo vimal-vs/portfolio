@@ -1,6 +1,6 @@
 export default function Skills(){
     return ( 
-        <section id="skills" className="w-1/2 lg:mt-32 lg:scroll-mt-24 group mt-24 text-lg text-slate-400">
+        <section id="skills" className=" mt-6 lg:w-1/2 lg:mt-18 lg:scroll-mt-24 group text-lg text-slate-400">
             <div className="flex flex-col gap-1 mt-4">
                 <h4 className="text-slate-300">Programming Languages :</h4>
                 <div className="flex mt-4 ml-4">

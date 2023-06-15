@@ -10,7 +10,7 @@ import Footer from "./Footer"
 import Skills from "./Skills"
 
 export default function Header() {
-    
+
     useEffect(() => {
         const sections = document.querySelectorAll("section[id]");
         var sectionId = "about";
@@ -26,7 +26,7 @@ export default function Header() {
     
             sections.forEach(current => {
                 const sectionHeight = current.offsetHeight;
-                const sectionTop = current.offsetTop-150;
+                const sectionTop = current.offsetTop-500;
                 sectionId = current.getAttribute("id");
                 
                 if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
@@ -46,7 +46,7 @@ export default function Header() {
                 <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:py-24">
                     <a href="/" className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Vimal Sakkthi</a>
                     <h3 className="mt-2 xl:text-xl">Student • Web Developer</h3>
-                    <p className="mt-5 2xl:text-lg text-slate-400 w-1/2">I build accessible, inclusive products and digital experiences for the web.</p>
+                    <p className="mt-5 2xl:text-lg text-slate-400 w-2/3 lg:w-1/2">I build accessible, inclusive products and digital experiences for the web.</p>
                     <div className="hidden lg:block">
                         <Nav />
                     </div>
@@ -54,7 +54,7 @@ export default function Header() {
                 </div>
                 <div className="sticky lg:w-1/2">
                     <div>
-                        <div className="lg:hidden mb-4 uppercase font-semibold">About</div>
+                        <div className="lg:hidden mt-12 uppercase font-semibold">About</div>
                         <About />
                     </div>
                     <div>
@@ -62,7 +62,8 @@ export default function Header() {
                         <Projects />
                     </div>
                     <div>
-                    <div className="mt-24 lg:mt-0">
+                    <div>
+                    <div className="lg:hidden mt-16 uppercase font-semibold">Skills</div>
                         <Skills />
                     </div> 
                         <div className="lg:hidden mt-16 mb-4 uppercase font-semibold">Contact</div>
