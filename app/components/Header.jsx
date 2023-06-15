@@ -1,3 +1,5 @@
+"use client"
+
 import Nav from "./Nav"
 import Socials from "./Socials"
 import Projects from "./Projects"
