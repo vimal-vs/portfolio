@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect } from "react"
 import Nav from "./Nav"
 import Socials from "./Socials"
 import Projects from "./Projects"
@@ -9,7 +10,8 @@ import Footer from "./Footer"
 import Skills from "./Skills"
 
 export default function Header() {
-    if(document.querySelectorAll("section[id]")){
+    
+    useEffect(() => {
         const sections = document.querySelectorAll("section[id]");
         var sectionId = "about";
         window.addEventListener("scroll", navHighlighter);
@@ -18,28 +20,26 @@ export default function Header() {
             document.querySelector("nav span").classList.add("activeSpan");
             document.querySelector("nav div").classList.add("activeText");
         }
-
         function navHighlighter() {
 
-        let scrollY = window.scrollY;
-
-        sections.forEach(current => {
-            const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop-150;
-            sectionId = current.getAttribute("id");
-            
-            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-                document.querySelector("nav a[href*=" + sectionId + "] span").classList.add("activeSpan");
-                document.querySelector("nav a[href*=" + sectionId + "] div").classList.add("activeText");
-            } 
-            else {
-                document.querySelector("nav a[href*=" + sectionId + "] span").classList.remove("activeSpan");
-                document.querySelector("nav a[href*=" + sectionId + "] div").classList.remove("activeText");
+            let scrollY = window.scrollY;
+    
+            sections.forEach(current => {
+                const sectionHeight = current.offsetHeight;
+                const sectionTop = current.offsetTop-150;
+                sectionId = current.getAttribute("id");
+                
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+                    document.querySelector("nav a[href*=" + sectionId + "] span").classList.add("activeSpan");
+                    document.querySelector("nav a[href*=" + sectionId + "] div").classList.add("activeText");
+                } 
+                else {
+                    document.querySelector("nav a[href*=" + sectionId + "] span").classList.remove("activeSpan");
+                    document.querySelector("nav a[href*=" + sectionId + "] div").classList.remove("activeText");
+                }
+            });
             }
-        });
-        }
-    }
-
+    });
     return (
         <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
             <div className="lg:flex lg:justify-between lg:gap-4">
