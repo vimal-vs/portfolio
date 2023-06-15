@@ -22,11 +22,5 @@
         "title" : "Project 4",
         "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis eos reiciendis quasi quod ipsam est, repudiandae, quia laborum i voluptatem.",
         "link" : ""
-    },
-    {
-        "id" : 5,
-        "title" : "Project 5",
-        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis eos reiciendis quasi quod ipsam est, repudiandae, quia laborum i voluptatem.",
-        "link" : ""
     }
 ]

@@ -7,7 +7,7 @@ const font  = Sofia_Sans ({
 })
 
 export const metadata = {
-  title: 'Portfolio',
+  title: 'Vs | Portfolio',
   description: 'Created by Vs',
 }
 
