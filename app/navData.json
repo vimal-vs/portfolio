@@ -11,6 +11,11 @@
     },
     {
         "id" : 3,
+        "title" : "Skills",
+        "href" : "#skills"
+    },
+    {
+        "id" : 4,
         "title" : "Contact",
         "href" : "#contact"
     }
