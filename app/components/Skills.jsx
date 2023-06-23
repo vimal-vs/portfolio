@@ -1,6 +1,8 @@
+import Contact from "./Contact";
+
 export default function Skills(){
     return ( 
-        <section id="skills" className="mt-6 lg:w-1/2 lg:mt-24 lg:scroll-mt-24 group text-lg text-slate-400">
+        <section id="skills" className="mt-6 lg:mt-24 lg:scroll-mt-24 text-lg text-slate-400">
             <div className="flex flex-col gap-1 mt-4">
                 <h4 className="text-slate-300">Programming Languages :</h4>
                 <div className="flex mt-4 ml-4">
@@ -35,7 +37,7 @@ export default function Skills(){
                 <div className="flex mt-4 ml-4">
                     <ul className="flex flex-col gap-4 list-disc w-1/3">
                         <li>Git</li>
-                        <li>Github</li>
+                        <li>Netlify</li>
                         <li>Vercel</li>
                     </ul>
                     <ul className="flex flex-col ml-20 gap-4 list-disc">
@@ -44,6 +46,7 @@ export default function Skills(){
                     </ul>
                 </div>
             </div>
+            <Contact />
         </section>
     )
 }

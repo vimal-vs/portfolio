@@ -1,26 +1,30 @@
 [
     {
         "id" : 1,
-        "title" : "Project 1",
-        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis eos reiciendis quasi quod ipsam est, repudiandae, quia laborum i voluptatem.",
-        "link" : ""
+        "title" : "University Library - Web App",
+        "description" : "A web application for my university's library section, addressing their unique requirements. Successfully implemented features to enhance the accessibility and utilization of e-resources.",
+        "picture" : "/project-universitylibrary.png",
+        "link" : "https://srmtrichy-library-api.vercel.app"
     },
     {
         "id" : 2,
-        "title" : "Project 2",
-        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis eos reiciendis quasi quod ipsam est, repudiandae, quia laborum i voluptatem.",
-        "link" : ""
+        "title" : "LiveBusIO",
+        "description" : "Implemented an innovative system that enables real-time tracking of college buses, providing students, faculty, and staff with accurate bus location information.",
+        "picture" : "/project-livebusio.png",
+        "link" : "https://livebusio.vercel.app"
     },
     {
         "id" : 3,
-        "title" : "Project 3",
+        "title" : "SocioLink",
         "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis eos reiciendis quasi quod ipsam est, repudiandae, quia laborum i voluptatem.",
-        "link" : ""
+        "picture" : "/project-sociolink.png",
+        "link" : "https://socio-link.vercel.app"
     },
     {
         "id" : 4,
         "title" : "Project 4",
         "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis eos reiciendis quasi quod ipsam est, repudiandae, quia laborum i voluptatem.",
+        "picture" : "/project-image.jpg",
         "link" : ""
     }
 ]

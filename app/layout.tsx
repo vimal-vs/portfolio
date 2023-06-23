@@ -1,5 +1,5 @@
 import './globals.css'
-import { Sofia_Sans } from '@next/font/google'
+import { Sofia_Sans } from 'next/font/google'
 
 const font  = Sofia_Sans ({
   subsets: ['latin'],
@@ -7,8 +7,8 @@ const font  = Sofia_Sans ({
 })
 
 export const metadata = {
-  title: 'Vs | Portfolio',
-  description: 'Created by Vs',
+  title: 'Vimal Sakkthi',
+  description: 'my personal portfolio',
 }
 
 export default function RootLayout({
