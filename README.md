@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-### Website link -> [https://vs-rho.vercel.app](https://vs-rho.vercel.app)
+### Website link -> [https://vimalvs.vercel.app](https://vimalvs.vercel.app)
 
 - Created using NextJS, React, Tailwind.
 - Hosted on Vercel.
