@@ -16,11 +16,5 @@
         "title" : "Skills",
         "href" : "#skills",
         "navID" : "skills"
-    },
-    {
-        "id" : 4,
-        "title" : "Contact",
-        "href" : "#contact",
-        "navID" : "contact"
     }
 ]

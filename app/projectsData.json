@@ -1,26 +1,30 @@
 [
     {
         "id" : 1,
-        "title" : "Project 1",
-        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis eos reiciendis quasi quod ipsam est, repudiandae, quia laborum i voluptatem.",
-        "link" : ""
+        "title" : "University Library - Web App",
+        "description" : "A web application for my university's library section, addressing their unique requirements.",
+        "picture" : "/project-universitylibrary.png",
+        "link" : "https://srmtrichy-library-api.vercel.app"
     },
     {
         "id" : 2,
-        "title" : "Project 2",
-        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis eos reiciendis quasi quod ipsam est, repudiandae, quia laborum i voluptatem.",
-        "link" : ""
+        "title" : "LiveBusIO",
+        "description" : "Implemented a real-time tracking of college buses with accurate bus location information.",
+        "picture" : "/project-livebusio.png",
+        "link" : "https://livebusio.vercel.app"
     },
     {
         "id" : 3,
-        "title" : "Project 3",
-        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis eos reiciendis quasi quod ipsam est, repudiandae, quia laborum i voluptatem.",
-        "link" : ""
+        "title" : "SocioLink",
+        "description" : "Just another social media app, created with express react tailwind mongoose and mongodb.",
+        "picture" : "/project-sociolink.png",
+        "link" : "https://socio-link.vercel.app"
     },
     {
         "id" : 4,
-        "title" : "Project 4",
-        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis eos reiciendis quasi quod ipsam est, repudiandae, quia laborum i voluptatem.",
-        "link" : ""
+        "title" : "Trackspense",
+        "description" : "Track & save your expenses online, created with nextjs react next-auth shadcn and tailwind.",
+        "picture" : "/project-trackspense.png",
+        "link" : "https://trackspence.vercel.app"
     }
 ]

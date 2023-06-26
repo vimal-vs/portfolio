@@ -5,7 +5,6 @@ import Nav from "./Nav"
 import Socials from "./Socials"
 import Projects from "./Projects"
 import About from "./About"
-import Contact from "./Contact"
 import Footer from "./Footer"
 import Skills from "./Skills"
 
@@ -43,16 +42,18 @@ export default function Header() {
     return (
         <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
             <div className="lg:flex lg:justify-between lg:gap-4">
-                <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:py-24">
-                    <a href="/" className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Vimal Sakkthi</a>
-                    <h3 className="mt-2 xl:text-xl">Student • Web Developer</h3>
-                    <p className="mt-5 2xl:text-lg text-slate-400 w-2/3 lg:w-1/2">I build accessible, inclusive products and digital experiences for the web.</p>
-                    <div className="hidden lg:block">
-                        <Nav />
+                <div className="lg:sticky lg:top-0 lg:flex lg:justify-between lg:max-h-screen lg:w-2/3 lg:flex-col lg:py-24">
+                    <div>
+                        <a href="/" className="text-4xl font-bold text-slate-200 sm:text-5xl tracking-wide w-max">Vimal Sakkthi</a>
+                        <h3 className="mt-2 xl:text-2xl">Student • Web Developer</h3>
+                        <p className="mt-5 2xl:text-lg text-slate-400 w-2/3">I build accessible, inclusive products and digital experiences for the web.</p>
+                        <div className="hidden lg:block">
+                            <Nav />
+                        </div>
                     </div>
                     <Socials />
                 </div>
-                <div className="sticky lg:w-1/2">
+                <div className="sticky lg:w-2/3">
                     <div>
                         <div className="lg:hidden mt-12 uppercase font-semibold">About</div>
                         <About />
@@ -66,8 +67,6 @@ export default function Header() {
                     <div className="lg:hidden mt-16 uppercase font-semibold">Skills</div>
                         <Skills />
                     </div> 
-                        <div className="lg:hidden mt-16 mb-4 uppercase font-semibold">Contact</div>
-                        <Contact />
                     </div>
                     <div className="mt-8 lg:mt-0">
                         <Footer />
