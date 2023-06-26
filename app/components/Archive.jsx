@@ -25,15 +25,15 @@ export default function Archive() {
               <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
                 <div>
                   <div className="block sm:hidden">
-                    <span>Harvard Business School Design System</span>
+                    <span>Project1</span>
                   </div>
-                    <div className="hidden sm:block">Harvard Business School Design System</div>
+                    <div className="hidden sm:block">Project1</div>
                 </div>
               </td>
               <td className="hidden py-4 pr-4 align-top lg:table-cell">
                 <ul className="flex -translate-y-1.5 flex-wrap">
                   <li className="my-1 mr-1.5">
-                    <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Storybook</div>
+                    <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Express</div>
                   </li>
                   <li className="my-1 mr-1.5">
                     <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">React</div>
