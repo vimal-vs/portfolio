@@ -23,11 +23,11 @@ export default function Archive() {
                 return(
                   <tr className="border-b border-slate-300/10 last:border-none" key={ project.id }>
                     <td className="py-4 pr-4 align-top text-sm">
-                      <div className="translate-y-px">{ project.year }</div>
+                      <div className="translate-y-px" key={ project.year }>{ project.year }</div>
                     </td>
                     <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
                       <div>
-                          <div className="text-sm md:text-base">{ project.title }</div>
+                          <div className="text-sm md:text-base" key={ project.title }>{ project.title }</div>
                       </div>
                     </td>
                     <td className="hidden py-4 pr-4 align-top md:table-cell">
@@ -35,14 +35,14 @@ export default function Archive() {
                       { project.technology.map(tech => {
                           return (
                             <li className="my-1 mr-1.5">
-                              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">{ tech }</div>
+                              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 " key={ tech }>{ tech }</div>
                             </li>
                           )}
                       )}
                       </ul>
                     </td>
-                    <td className="text-sm py-4 align-top"><a href={ project.link } className="hover:text-teal-300 hover:font-semibold">Demo</a></td>
-                    <td className="text-sm py-4 align-top"><a href={ project.gitlink } className="hover:text-teal-300 hover:font-semibold">Github</a></td>
+                    <td className="text-sm py-4 align-top"><a href={ project.link } className="hover:text-teal-300 hover:font-semibold" key={ project.link }>Demo</a></td>
+                    <td className="text-sm py-4 align-top"><a href={ project.gitlink } className="hover:text-teal-300 hover:font-semibold" key={ project.gitlink }>Github</a></td>
                   </tr>
                 )}
             )}
