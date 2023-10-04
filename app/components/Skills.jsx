@@ -1,7 +1,7 @@
 import Contact from "./Contact";
 
-export default function Skills(){
-    return ( 
+export default function Skills() {
+    return (
         <section id="skills" className="mt-6 lg:mt-24 lg:scroll-mt-24 text-lg text-slate-400">
             <div className="flex flex-col gap-1 mt-4">
                 <h4 className="text-slate-300">Programming Languages :</h4>
@@ -43,6 +43,7 @@ export default function Skills(){
                     <ul className="flex flex-col ml-20 gap-4 list-disc">
                         <li>Figma</li>
                         <li>Firebase</li>
+                        <li>GCP</li>
                     </ul>
                 </div>
             </div>
