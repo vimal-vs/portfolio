@@ -6,6 +6,7 @@ import Socials from "./Socials"
 import Projects from "./Projects"
 import About from "./About"
 import Footer from "./Footer"
+import Experience from "./Experience"
 import Skills from "./Skills"
 
 export default function Header() {
@@ -15,29 +16,29 @@ export default function Header() {
         var sectionId = "about";
         window.addEventListener("scroll", navHighlighter);
 
-        if (document.querySelector("nav span") && document.querySelector("nav div")){
+        if (document.querySelector("nav span") && document.querySelector("nav div")) {
             document.querySelector("nav span").classList.add("activeSpan");
             document.querySelector("nav div").classList.add("activeText");
         }
         function navHighlighter() {
 
             let scrollY = window.scrollY;
-    
+
             sections.forEach(current => {
                 const sectionHeight = current.offsetHeight;
-                const sectionTop = current.offsetTop-500;
+                const sectionTop = current.offsetTop - 500;
                 sectionId = current.getAttribute("id");
-                
-                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
                     document.querySelector("nav a[href*=" + sectionId + "] span").classList.add("activeSpan");
                     document.querySelector("nav a[href*=" + sectionId + "] div").classList.add("activeText");
-                } 
+                }
                 else {
                     document.querySelector("nav a[href*=" + sectionId + "] span").classList.remove("activeSpan");
                     document.querySelector("nav a[href*=" + sectionId + "] div").classList.remove("activeText");
                 }
             });
-            }
+        }
     });
     return (
         <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
@@ -54,20 +55,22 @@ export default function Header() {
                     <Socials />
                 </div>
                 <div className="sticky lg:w-2/3">
-                    <div>
+                    <>
                         <div className="lg:hidden mt-12 uppercase font-semibold">About</div>
                         <About />
-                    </div>
-                    <div>
+                    </>
+                    <>
                         <div className="lg:hidden mt-16 uppercase font-semibold">Projects</div>
                         <Projects />
-                    </div>
-                    <div>
-                    <div>
-                    <div className="lg:hidden mt-16 uppercase font-semibold">Skills</div>
+                    </>
+                    <>
+                        <div className="lg:hidden mt-16 uppercase font-semibold">Experience</div>
+                        <Experience />
+                    </>
+                    <>
+                        <div className="lg:hidden mt-16 uppercase font-semibold">Skills</div>
                         <Skills />
-                    </div> 
-                    </div>
+                    </>
                     <div className="mt-8 lg:mt-0">
                         <Footer />
                     </div>
