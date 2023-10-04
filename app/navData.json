@@ -1,20 +1,26 @@
 [
     {
-        "id" : 1,
-        "title" : "About",
-        "href" : "#about",
-        "navID" : "about"
+        "id": 1,
+        "title": "About",
+        "href": "#about",
+        "navID": "about"
     },
     {
-        "id" : 2,
-        "title" : "Projects",
-        "href" : "#projects",
-        "navID" : "projects"
+        "id": 2,
+        "title": "Projects",
+        "href": "#projects",
+        "navID": "projects"
     },
     {
-        "id" : 3,
-        "title" : "Skills",
-        "href" : "#skills",
-        "navID" : "skills"
+        "id": 3,
+        "title": "Experience",
+        "href": "#experience",
+        "navID": "experience"
+    },
+    {
+        "id": 4,
+        "title": "Skills",
+        "href": "#skills",
+        "navID": "skills"
     }
 ]
