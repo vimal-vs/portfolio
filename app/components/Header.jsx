@@ -26,7 +26,7 @@ export default function Header() {
 
             sections.forEach(current => {
                 const sectionHeight = current.offsetHeight;
-                const sectionTop = current.offsetTop - 500;
+                const sectionTop = current.offsetTop - 180;
                 sectionId = current.getAttribute("id");
 
                 if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -39,7 +39,7 @@ export default function Header() {
                 }
             });
         }
-    });
+    }, []);
     return (
         <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
             <div className="lg:flex lg:justify-between lg:gap-4">
@@ -47,7 +47,7 @@ export default function Header() {
                     <div>
                         <a href="/" className="text-4xl font-bold text-slate-200 sm:text-5xl tracking-wide w-max">Vimal Sakkthi</a>
                         <h3 className="mt-2 xl:text-2xl">Student • Web Developer</h3>
-                        <p className="mt-5 2xl:text-lg text-slate-400 w-2/3">I build accessible, inclusive products and digital experiences for the web.</p>
+                        <p className="mt-5 2xl:text-lg text-slate-400 w-2/3">I build exceptional and accessible digital experiences for the web.</p>
                         <div className="hidden lg:block">
                             <Nav />
                         </div>
@@ -60,12 +60,12 @@ export default function Header() {
                         <About />
                     </>
                     <>
-                        <div className="lg:hidden mt-16 uppercase font-semibold">Projects</div>
-                        <Projects />
-                    </>
-                    <>
                         <div className="lg:hidden mt-16 uppercase font-semibold">Experience</div>
                         <Experience />
+                    </>
+                    <>
+                        <div className="lg:hidden mt-16 uppercase font-semibold">Projects</div>
+                        <Projects />
                     </>
                     <>
                         <div className="lg:hidden mt-16 uppercase font-semibold">Skills</div>
