@@ -7,15 +7,15 @@
     },
     {
         "id": 2,
-        "title": "Projects",
-        "href": "#projects",
-        "navID": "projects"
-    },
-    {
-        "id": 3,
         "title": "Experience",
         "href": "#experience",
         "navID": "experience"
+    },
+    {
+        "id": 3,
+        "title": "Projects",
+        "href": "#projects",
+        "navID": "projects"
     },
     {
         "id": 4,

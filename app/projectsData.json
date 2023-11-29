@@ -1,38 +1,61 @@
 [
     {
-        "id" : 1,
-        "title" : "University Library - Web App",
-        "description" : "A web application for my university's library section, addressing their unique requirements.",
-        "picture" : "/project-universitylibrary.png",
-        "link" : "https://srmtrichy-library-api.vercel.app",
-        "technology" : ["Express", "HBS", "CSS", "Javascript"],
-        "gitlink" : "https://github.com/vimal-vs/srmtrichy-library-api"
+        "id": 1,
+        "title": "LiveBusIO",
+        "description": "Implemented a real-time tracking of college buses with accurate bus location information.",
+        "picture": "/project-livebusio.png",
+        "link": "https://livebusio.vercel.app",
+        "technology": [
+            "React",
+            "MapTiler",
+            "Tailwind",
+            "Firebase"
+        ],
+        "gitlink": "https://github.com/vimal-vs/livebusio"
     },
     {
-        "id" : 2,
-        "title" : "LiveBusIO",
-        "description" : "Implemented a real-time tracking of college buses with accurate bus location information.",
-        "picture" : "/project-livebusio.png",
-        "link" : "https://livebusio.vercel.app",
-        "technology" : ["React", "MapTiler", "Tailwind", "Firebase"],
-        "gitlink" : "https://github.com/vimal-vs/livebusio"
+        "id": 2,
+        "title": "Trackspense",
+        "description": "Track & save your expenses online, created with nextjs react next-auth shadcn and tailwind.",
+        "picture": "/project-trackspense.png",
+        "link": "https://trackspence.vercel.app",
+        "technology": [
+            "React",
+            "Shadcn",
+            "Tailwind",
+            "NextJS",
+            "NextAuth"
+        ],
+        "gitlink": "https://github.com/vimal-vs/trackspense"
     },
     {
-        "id" : 3,
-        "title" : "SocioLink",
-        "description" : "Just another social media app, created with express react tailwind mongoose and mongodb.",
-        "picture" : "/project-sociolink.png",
-        "link" : "https://socio-link.vercel.app",
-        "technology" : ["Redux", "MUI", "React", "Express","Mongoose", "MongoDB"],
-        "gitlink" : "https://github.com/vimal-vs/socio-link"
+        "id": 3,
+        "title": "University Library - Web App",
+        "description": "A web application for my university's library section, addressing their unique requirements.",
+        "picture": "/project-universitylibrary.png",
+        "link": "https://srmtrichy-library-api.vercel.app",
+        "technology": [
+            "Express",
+            "HBS",
+            "CSS",
+            "Javascript"
+        ],
+        "gitlink": "https://github.com/vimal-vs/srmtrichy-library-api"
     },
     {
-        "id" : 4,
-        "title" : "Trackspense",
-        "description" : "Track & save your expenses online, created with nextjs react next-auth shadcn and tailwind.",
-        "picture" : "/project-trackspense.png",
-        "link" : "https://trackspence.vercel.app",
-        "technology" : ["React", "Shadcn", "Tailwind", "NextJS", "NextAuth"],
-        "gitlink" : "https://github.com/vimal-vs/trackspense"
+        "id": 4,
+        "title": "SocioLink",
+        "description": "Just another social media app, created with express react tailwind mongoose and mongodb.",
+        "picture": "/project-sociolink.png",
+        "link": "https://socio-link.vercel.app",
+        "technology": [
+            "Redux",
+            "MUI",
+            "React",
+            "Express",
+            "Mongoose",
+            "MongoDB"
+        ],
+        "gitlink": "https://github.com/vimal-vs/socio-link"
     }
 ]

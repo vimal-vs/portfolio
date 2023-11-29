@@ -1,34 +1,49 @@
 [
     {
-        "id" : 1,
-        "year" : "2023",
-        "title" : "SocioLink Server",
-        "link" : "https://socio-link-api.onrender.com",
-        "technology" : ["Redux", "React", "Express", "Mongoose", "MongoDB"],
-        "gitlink" : "https://github.com/vimal-vs/livebusio"
+        "id": 1,
+        "year": "2023",
+        "title": "SocioLink Server",
+        "link": "https://socio-link-api.onrender.com",
+        "technology": [
+            "Redux",
+            "React",
+            "Express",
+            "Mongoose",
+            "MongoDB"
+        ],
+        "gitlink": "https://github.com/vimal-vs/livebusio"
     },
     {
-        "id" : 2,
-        "year" : "2021",
-        "title" : "Hostel Leave Form",
-        "link" : "https://srmist-hostel-leave-app-form.web.app",
-        "technology" : ["HTML", "CSS", "Javascript", "Firebase"],
-        "gitlink" : "https://github.com/vimal-vs/hostel-leave-request-form"
+        "id": 2,
+        "year": "2021",
+        "title": "Hostel Leave Form",
+        "link": "https://srmist-hostel-leave-app-form.web.app",
+        "technology": [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "Firebase"
+        ],
+        "gitlink": "https://github.com/vimal-vs/hostel-leave-request-form"
     },
     {
-        "id" : 3,
-        "year" : "2020",
-        "title" : "Password Generator",
-        "link" : "",
-        "technology" : ["Python"],
-        "gitlink" : "https://github.com/vimal-vs/password-generator"
+        "id": 3,
+        "year": "2020",
+        "title": "Password Generator",
+        "link": "",
+        "technology": [
+            "Python"
+        ],
+        "gitlink": "https://github.com/vimal-vs/password-generator"
     },
     {
-        "id" : 4,
-        "year" : "2020",
-        "title" : "Amazon Price Tracker",
-        "link" : "",
-        "technology" : ["Python"],
-        "gitlink" : "https://github.com/vimal-vs/amazon-price-tracker"
+        "id": 4,
+        "year": "2020",
+        "title": "Amazon Price Tracker",
+        "link": "",
+        "technology": [
+            "Python"
+        ],
+        "gitlink": "https://github.com/vimal-vs/amazon-price-tracker"
     }
 ]
