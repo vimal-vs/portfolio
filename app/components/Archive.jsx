@@ -21,7 +21,7 @@ export default function Archive() {
         <tbody>
           {projects.map(project => {
             return (
-              <tr className="border-b border-slate-300/10 last:border-none" key={project.id}>
+              <tr className="border-b border-slate-300/10 last:border-none" key={project.title}>
                 <td className="py-4 pr-4 align-top text-sm" key={project.year}>
                   <div className="translate-y-px">{project.year}</div>
                 </td>

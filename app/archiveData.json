@@ -1,20 +1,54 @@
 [
     {
-        "id": 1,
         "year": "2023",
-        "title": "SocioLink Server",
-        "link": "https://socio-link-api.onrender.com",
+        "title": "FarmSense",
+        "link": "https://farmsense.vercel.app",
         "technology": [
-            "Redux",
-            "React",
-            "Express",
-            "Mongoose",
-            "MongoDB"
+            "NextJS",
+            "Tailwind",
+            "IOT",
+            "Firebase",
+            "OpenStreetMap API"
         ],
-        "gitlink": "https://github.com/vimal-vs/livebusio"
+        "gitlink": "https://github.com/vimal-vs/farmsense"
     },
     {
-        "id": 2,
+        "year": "2023",
+        "title": "TrackSpence",
+        "link": "https://trackspence.vercel.app",
+        "technology": [
+            "NextJS",
+            "Shadcn",
+            "Tailwind"
+        ],
+        "gitlink": "https://github.com/vimal-vs/trackspense"
+    },
+    {
+        "year": "2023",
+        "title": "Task for Intern role",
+        "link": "https://techhive-mern-client.vercel.app",
+        "technology": [
+            "React",
+            "Tailwind",
+            "Express",
+            "MongoDB"
+        ],
+        "gitlink": "https://github.com/vimal-vs/techhive-mern-client"
+    },
+    {
+        "year": "2023",
+        "title": "SocioLink",
+        "link": "https://socio-link.vercel.app",
+        "technology": [
+            "React",
+            "Redux",
+            "Tailwind",
+            "Express",
+            "MongoDB"
+        ],
+        "gitlink": "https://github.com/vimal-vs/socio-link"
+    },
+    {
         "year": "2021",
         "title": "Hostel Leave Form",
         "link": "https://srmist-hostel-leave-app-form.web.app",
@@ -27,23 +61,33 @@
         "gitlink": "https://github.com/vimal-vs/hostel-leave-request-form"
     },
     {
-        "id": 3,
         "year": "2020",
         "title": "Password Generator",
         "link": "",
         "technology": [
-            "Python"
+            "Python",
+            "Tkinter"
         ],
         "gitlink": "https://github.com/vimal-vs/password-generator"
     },
     {
-        "id": 4,
         "year": "2020",
         "title": "Amazon Price Tracker",
         "link": "",
         "technology": [
-            "Python"
+            "Python",
+            "BS4"
         ],
         "gitlink": "https://github.com/vimal-vs/amazon-price-tracker"
+    },
+    {
+        "year": "2020",
+        "title": "First WebSite? 😽",
+        "link": "https://first-html-css-vs.vercel.app/",
+        "technology": [
+            "HTML",
+            "CSS"
+        ],
+        "gitlink": "https://github.com/vimal-vs/html-css-practice"
     }
 ]
