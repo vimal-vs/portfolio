@@ -46,7 +46,7 @@ export default function Header() {
                 <div className="lg:sticky lg:top-0 lg:flex lg:justify-between lg:max-h-screen lg:w-2/3 lg:flex-col lg:py-24">
                     <div>
                         <a href="/" className="text-4xl font-bold text-slate-200 sm:text-5xl tracking-wide w-max">Vimal Sakkthi</a>
-                        <h3 className="mt-2 xl:text-2xl">Student • Web Developer</h3>
+                        <h3 className="mt-2 xl:text-2xl">Web/Cloud Developer</h3>
                         <p className="mt-5 2xl:text-lg text-slate-400 w-2/3">I build exceptional and accessible digital experiences for the web.</p>
                         <div className="hidden lg:block">
                             <Nav />
