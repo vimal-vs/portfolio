@@ -5,7 +5,7 @@ export default function Experience() {
         <section id="experience" className="lg:mt-2 lg:pb-24 lg:scroll-mt-24">
             <a href="https://techhivetechnology.com" target="_blank" className="group flex flex-col pt-4 lg:flex-row lg:p-4 hover:text-teal-300 focus-visible:text-teal-300 hover:bg-slate-500 hover:bg-opacity-10 transition-all rounded-md">
                 <div className="w-1/2 mt-1">
-                    <h3 className="tracking-wide text-slate-400 text-xs">2023 — PRESENT</h3>
+                    <h3 className="tracking-wide text-slate-400 text-xs">AUG'23 — AUG'24</h3>
                 </div>
                 <div className="flex flex-col gap-3 font-medium text-slate-200">
                     <div className="flex gap-2">
