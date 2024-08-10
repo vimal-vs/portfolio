@@ -43,6 +43,7 @@ export default function Skills() {
                     <ul className="flex flex-col ml-20 gap-4 list-disc">
                         <li>Terraform</li>
                         <li>Jenkins</li>
+                        <li>Figma</li>
                     </ul>
                 </div>
             </div>
