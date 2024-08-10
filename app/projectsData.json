@@ -42,7 +42,7 @@
             "Firebase"
         ],
         "gitlink": "https://github.com/vimal-vs/livebusio"
-    }
+    },
     {
         "id": 4,
         "title": "University Conference Website",
@@ -56,5 +56,5 @@
             "Framer Motion"
         ],
         "gitlink": "https://github.com/vimal-vs/srmist-trc-conference"
-    },
+    }
 ]
