@@ -8,9 +8,10 @@ export default function Skills() {
                 <div className="flex mt-4 ml-4">
                     <ul className="flex flex-col gap-4 list-disc w-1/3">
                         <li>JavaScript</li>
-                        <li>C++</li>
+                        <li>TypeScript</li>
                     </ul>
                     <ul className="flex flex-col ml-20 gap-4 list-disc">
+                        <li>C++</li>
                         <li>Python</li>
                     </ul>
                 </div>
@@ -19,16 +20,15 @@ export default function Skills() {
                 <h4 className="text-slate-300">Libraries & Frameworks :</h4>
                 <div className="flex mt-4 ml-4">
                     <ul className="flex flex-col gap-4 list-disc w-1/3">
+                        <li>Next.Js</li>
+                        <li>React.Js</li>
                         <li>Tailwind</li>
-                        <li>React</li>
-                        <li>Node.Js</li>
-                        <li>Express.Js</li>
                     </ul>
                     <ul className="flex flex-col ml-20 gap-4 list-disc">
-                        <li>Next.Js</li>
-                        <li>Prisma</li>
+                        <li>Express.Js</li>
+                        <li>Sequelize/Prisma</li>
                         <li>MongoDB</li>
-                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
                     </ul>
                 </div>
             </div>
@@ -36,14 +36,13 @@ export default function Skills() {
                 <h4 className="text-slate-300">Tools & Platforms :</h4>
                 <div className="flex mt-4 ml-4">
                     <ul className="flex flex-col gap-4 list-disc w-1/3">
-                        <li>Git</li>
-                        <li>Netlify</li>
-                        <li>Vercel</li>
+                        <li>Google Cloud (GCP)</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
                     </ul>
                     <ul className="flex flex-col ml-20 gap-4 list-disc">
-                        <li>Figma</li>
-                        <li>Firebase</li>
-                        <li>GCP</li>
+                        <li>Terraform</li>
+                        <li>Jenkins</li>
                     </ul>
                 </div>
             </div>
