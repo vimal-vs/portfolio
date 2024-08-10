@@ -23,9 +23,9 @@ export default function Skills() {
                         <li>Next.Js</li>
                         <li>React.Js</li>
                         <li>Tailwind</li>
+                        <li>Express.Js</li>
                     </ul>
                     <ul className="flex flex-col ml-20 gap-4 list-disc">
-                        <li>Express.Js</li>
                         <li>Sequelize/Prisma</li>
                         <li>MongoDB</li>
                         <li>PostgreSQL</li>
