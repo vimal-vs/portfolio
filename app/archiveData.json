@@ -8,7 +8,7 @@
             "Tailwind",
             "IOT",
             "Firebase",
-            "OpenStreetMap API"
+            "OpenStreetMap"
         ],
         "gitlink": "https://github.com/vimal-vs/farmsense"
     },
@@ -76,7 +76,8 @@
         "link": "",
         "technology": [
             "Python",
-            "BS4"
+            "BeautifulSoup4",
+            "SMTP"
         ],
         "gitlink": "https://github.com/vimal-vs/amazon-price-tracker"
     },
