@@ -14,7 +14,7 @@ export const metadata = {
   keywords: 'Vimal Sakkthi, vimal, software developer, portfolio, web development, design, programming',
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || ""),
   alternates: {
-    canonical: '/',
+    canonical: process.env.NEXT_PUBLIC_BASE_URL || "https://www.vimalvs.com",  
     languages: {
       'en-US': '/en-US',
     },
@@ -65,7 +65,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={font.className}>
-      <head>
+      <head>  
+        <link
+          rel="canonical"
+          href={process.env.NEXT_PUBLIC_BASE_URL || "https://www.vimalvs.com"}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
