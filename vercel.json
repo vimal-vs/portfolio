@@ -1,8 +1,8 @@
 {
     "redirects": [
       {
-        "source": "/:path(.*)",  
-        "destination": "https://www.vimalvs.com/:path",
+        "source": "https://vimalvs.com/:path*",
+        "destination": "https://www.vimalvs.com/:path*",
         "permanent": true
       }
     ]
