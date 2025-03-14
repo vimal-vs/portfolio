@@ -1,9 +1,2 @@
 {
-    "redirects": [
-      {
-        "source": "/:path*",
-        "destination": "https://www.vimalvs.com/:path*",
-        "permanent": true
-      }
-    ]
 }
