@@ -14,10 +14,7 @@ export const metadata = {
   keywords: 'Vimal Sakkthi, vimal, software developer, portfolio, web development, design, programming',
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || ""),
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_BASE_URL || "https://www.vimalvs.com",  
-    languages: {
-      'en-US': '/en-US',
-    },
+    canonical: process.env.NEXT_PUBLIC_BASE_URL || "https://www.vimalvs.com"
   },
   openGraph: {
     title: 'Vimal Sakkthi | Portfolio',
