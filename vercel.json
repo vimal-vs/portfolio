@@ -1,2 +1,16 @@
 {
+  "redirects": [
+    {
+      "source": "http://vimalvs.com/:path*",
+      "destination": "https://vimalvs.com/:path*",
+      "permanent": true,
+      "statusCode": 301
+    },
+    {
+      "source": "http://www.vimalvs.com/:path*",
+      "destination": "https://www.vimalvs.com/:path*",
+      "permanent": true,
+      "statusCode": 301
+    }
+  ]
 }

@@ -12,9 +12,9 @@ export const metadata = {
   title: 'Vimal Sakkthi | Portfolio',
   description: 'Personal portfolio of Vimal Sakkthi - Software Development Engineer. Explore my projects, skills, and professional experience.',
   keywords: 'Vimal Sakkthi, vimal, software developer, portfolio, web development, design, programming',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || ""),
+  metadataBase: new URL("https://www.vimalvs.com"),
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_BASE_URL || "https://www.vimalvs.com"
+    canonical: "https://www.vimalvs.com"
   },
   openGraph: {
     title: 'Vimal Sakkthi | Portfolio',
