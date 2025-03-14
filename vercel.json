@@ -1,0 +1,20 @@
+{
+    "redirects": [
+      {
+        "source": "http://vimalvs.com",
+        "destination": "https://www.vimalvs.com",
+        "permanent": true
+      },
+      {
+        "source": "https://vimalvs.com",
+        "destination": "https://www.vimalvs.com",
+        "permanent": true
+      },
+      {
+        "source": "http://www.vimalvs.com",
+        "destination": "https://www.vimalvs.com",
+        "permanent": true
+      }
+    ]
+  }
+  
