@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      "source": "http://vimalvs.com",
-      "destination": "https://www.vimalvs.com",
+      "source": "/",
+      "destination": "https://www.vimalvs.in",
       "permanent": true
     }
   ]
