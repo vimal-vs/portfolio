@@ -1,6 +1,7 @@
 import './globals.css'
 import { Schibsted_Grotesk, JetBrains_Mono } from 'next/font/google'
 import Script from 'next/script'
+import { Analytics } from '@vercel/analytics/next'
 
 const sans = Schibsted_Grotesk({
   subsets: ['latin'],
@@ -107,6 +108,7 @@ export default function RootLayout({
       </head>
       <body className="bg-ink font-sans leading-relaxed antialiased selection:bg-signal selection:text-paper">
         {children}
+        <Analytics />
         
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
