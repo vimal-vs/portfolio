@@ -1,7 +1,7 @@
 "use client";
 
-import Cursor from "./components/Cursor.jsx"
-import Header from "./components/Header.jsx"
+import Cursor from "../components/ui/Cursor.jsx"
+import PageShell from "../components/layout/PageShell.jsx"
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
     <div className="hidden md:block">
       <Cursor />
     </div>
-    <Header />
+    <PageShell />
   </>
   )
 }

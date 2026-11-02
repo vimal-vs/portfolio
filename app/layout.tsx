@@ -1,24 +1,31 @@
 import './globals.css'
-import { Sofia_Sans } from 'next/font/google'
+import { Schibsted_Grotesk, JetBrains_Mono } from 'next/font/google'
 import Script from 'next/script'
 
-const font = Sofia_Sans({
+const sans = Schibsted_Grotesk({
   subsets: ['latin'],
-  weight: '400',
+  variable: '--font-sans',
+  display: 'swap',
+  adjustFontFallback: false,
+})
+
+const mono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-mono',
   display: 'swap',
 })
 
 export const metadata = {
   title: 'Vimal Sakkthi | Portfolio',
-  description: 'Personal portfolio of Vimal Sakkthi - Software Development Engineer. Explore my projects, skills, and professional experience.',
-  keywords: 'Vimal Sakkthi, vimal, software developer, portfolio, web development, design, programming',
-  metadataBase: new URL("https://www.vimalvs.com"),
+  description: 'Personal portfolio of Vimal Sakkthi - Associate Software Engineer at Bajaj Finserv Health, building observability platforms, conversational AI and cloud systems.',
+  keywords: 'Vimal Sakkthi, vimal, software engineer, portfolio, observability, cloud engineer, GCP, full stack, Next.js, Spring Boot',
+  metadataBase: new URL("https://www.vimalvs.in"),
   alternates: {
-    canonical: "https://www.vimalvs.com"
+    canonical: "https://www.vimalvs.in"
   },
   openGraph: {
     title: 'Vimal Sakkthi | Portfolio',
-    description: 'Personal portfolio of Vimal Sakkthi - Software Development Engineer',
+    description: 'Personal portfolio of Vimal Sakkthi - Associate Software Engineer at Bajaj Finserv Health',
     url: process.env.NEXT_PUBLIC_BASE_URL,
     siteName: 'Vimal Sakkthi',
     images: [
@@ -35,7 +42,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Vimal Sakkthi | Portfolio',
-    description: 'Personal portfolio of Vimal Sakkthi - Software Development Engineer',
+    description: 'Personal portfolio of Vimal Sakkthi - Associate Software Engineer at Bajaj Finserv Health',
   },
   robots: {
     index: true,
@@ -61,11 +68,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={font.className}>
-      <head>  
+    <html lang="en" className={`${sans.variable} ${mono.variable}`}>
+      <head>
         <link
           rel="canonical"
-          href={process.env.NEXT_PUBLIC_BASE_URL || "https://www.vimalvs.com"}
+          href={process.env.NEXT_PUBLIC_BASE_URL || "https://www.vimalvs.in"}
         />
         <script
           type="application/ld+json"
@@ -79,12 +86,12 @@ export default function RootLayout({
                 process.env.NEXT_PUBLIC_LINKEDIN_URL,
                 process.env.NEXT_PUBLIC_GITHUB_URL,
               ],
-              jobTitle: process.env.NEXT_PUBLIC_JOB_TITLE,
+              jobTitle: 'Associate Software Engineer',
               worksFor: {
                 '@type': 'Organization',
-                name: process.env.NEXT_PUBLIC_COMPANY_NAME,
+                name: 'Bajaj Finserv Health',
               },
-              knowsAbout: ['Software Engineering', 'Cloud Engineering','PERN Stack', 'Next.js', 'React.js', 'GCP', 'AWS'],
+              knowsAbout: ['Software Engineering', 'Observability', 'Cloud Engineering', 'Next.js', 'React.js', 'Spring Boot', 'GCP', 'Kubernetes', 'Elasticsearch'],
               alumniOf: {
                 '@type': 'CollegeOrUniversity',
                 name: 'SRM University',
@@ -93,7 +100,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="bg-slate-900 leading-relaxed antialiased selection:bg-teal-300 selection:text-teal-900">
+      <body className="bg-ink font-sans leading-relaxed antialiased selection:bg-signal selection:text-ink">
         {children}
         
         <Script

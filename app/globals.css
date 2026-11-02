@@ -2,48 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-html { 
-    scroll-behavior: smooth; 
-    color: #e2e8f0;
+html {
+    scroll-behavior: smooth;
+    color: #edeee8;
+    background: #0a0c0b;
 }
 
-#projects-section:hover #project{
-    opacity:0.5;
-    transition: all 200ms;
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 }
 
-#projects-section #project:hover{
-    opacity:1;
-    box-shadow: 1px 1px #15213b ;
-    transition: all 200ms;
+:focus-visible {
+    outline: 2px solid #c4f042;
+    outline-offset: 3px;
+    border-radius: 2px;
 }
 
-::-webkit-scrollbar{
-    width: 0.8rem;
+::-webkit-scrollbar {
+    width: 0.6rem;
 }
 
-::-webkit-scrollbar-track{
-    background: hsl(221, 48%, 18%);
+::-webkit-scrollbar-track {
+    background: #0a0c0b;
 }
 
-::-webkit-scrollbar-thumb{
-    background: hsl(221, 45%, 24%);
-    height: .1rem;
+::-webkit-scrollbar-thumb {
+    background: #252a27;
 }
 
-.cursorGuitar{
+.cursorGuitar {
     cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec82.cur), auto !important;
 }
 
-.cursorEsports{
-    cursor: url(https://cur.cursors-4u.net/mechanics/mec-5/mec440.cur), auto !important;
+.heroGrid {
+    background-image:
+        linear-gradient(to right, #252a27 1px, transparent 1px),
+        linear-gradient(to bottom, #252a27 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse 70% 80% at 70% 20%, black, transparent);
+    -webkit-mask-image: radial-gradient(ellipse 70% 80% at 70% 20%, black, transparent);
+    opacity: 0.45;
 }
 
-.activeSpan{
-    width: 4rem;
-    background-color: rgb(226 232 240 / 1);
+@keyframes livePulse {
+    0% {
+        box-shadow: 0 0 0 0 rgb(196 240 66 / 0.55);
+    }
+    100% {
+        box-shadow: 0 0 0 9px rgb(196 240 66 / 0);
+    }
 }
 
-.activeText{
-    color: #e2e8f0;
+.liveDot {
+    animation: livePulse 1.8s ease-out infinite;
+}
+
+@keyframes pinPulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(3.5);
+        opacity: 0;
+    }
+}
+
+.pinPulse {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: pinPulse 2.4s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .liveDot,
+    .pinPulse {
+        animation: none;
+    }
+
+    .pinPulse {
+        opacity: 0;
+    }
 }

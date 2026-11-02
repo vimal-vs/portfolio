@@ -1,0 +1,19 @@
+[
+    {
+        "value": "14+",
+        "label": "teams use the internal observability platform I built and scaled"
+    },
+    {
+        "value": "95%",
+        "label": "fewer production errors from chatbot configuration, after I built a safer way to manage it"
+    },
+    {
+        "value": "60%",
+        "prefix": "up to",
+        "label": "less API traffic after adding caching at the API gateway"
+    },
+    {
+        "value": "8s → 4s",
+        "label": "approximate query time in a conversational AI module, using fuzzy and vector search"
+    }
+]
