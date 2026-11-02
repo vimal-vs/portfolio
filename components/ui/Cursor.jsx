@@ -30,7 +30,7 @@ export default function Cursor() {
         width: SIZE,
         height: SIZE,
         background:
-          "radial-gradient(circle, rgb(196 240 66 / 0.07), transparent 65%)",
+          "radial-gradient(circle, rgb(var(--signal) / 0.07), transparent 65%)",
       }}
     />
   );

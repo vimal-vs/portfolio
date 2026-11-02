@@ -8,13 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ink: '#0a0c0b',
-        panel: '#121513',
-        line: '#252a27',
-        paper: '#edeee8',
-        mute: '#9aa29c',
-        faint: '#7d857f',
-        signal: '#c4f042',
+        ink: 'rgb(var(--ink) / <alpha-value>)',
+        panel: 'rgb(var(--panel) / <alpha-value>)',
+        line: 'rgb(var(--line) / <alpha-value>)',
+        paper: 'rgb(var(--paper) / <alpha-value>)',
+        mute: 'rgb(var(--mute) / <alpha-value>)',
+        faint: 'rgb(var(--faint) / <alpha-value>)',
+        signal: 'rgb(var(--signal) / <alpha-value>)',
       },
       fontFamily: {
         sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],

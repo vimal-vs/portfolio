@@ -2,10 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    color-scheme: dark;
+    --ink: 10 12 11;
+    --panel: 18 21 19;
+    --line: 37 42 39;
+    --paper: 237 238 232;
+    --mute: 154 162 156;
+    --faint: 125 133 127;
+    --signal: 196 240 66;
+}
+
+:root.light {
+    color-scheme: light;
+    --ink: 248 249 245;
+    --panel: 255 255 255;
+    --line: 221 225 217;
+    --paper: 27 33 29;
+    --mute: 77 88 80;
+    --faint: 104 115 106;
+    --signal: 92 119 14;
+}
+
 html {
     scroll-behavior: smooth;
-    color: #edeee8;
-    background: #0a0c0b;
+    color: rgb(var(--paper));
+    background: rgb(var(--ink));
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -15,7 +37,7 @@ html {
 }
 
 :focus-visible {
-    outline: 2px solid #c4f042;
+    outline: 2px solid rgb(var(--signal));
     outline-offset: 3px;
     border-radius: 2px;
 }
@@ -25,11 +47,11 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #0a0c0b;
+    background: rgb(var(--ink));
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #252a27;
+    background: rgb(var(--line));
 }
 
 .cursorGuitar {
@@ -38,8 +60,8 @@ html {
 
 .heroGrid {
     background-image:
-        linear-gradient(to right, #252a27 1px, transparent 1px),
-        linear-gradient(to bottom, #252a27 1px, transparent 1px);
+        linear-gradient(to right, rgb(var(--line)) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(var(--line)) 1px, transparent 1px);
     background-size: 64px 64px;
     mask-image: radial-gradient(ellipse 70% 80% at 70% 20%, black, transparent);
     -webkit-mask-image: radial-gradient(ellipse 70% 80% at 70% 20%, black, transparent);
@@ -48,10 +70,10 @@ html {
 
 @keyframes livePulse {
     0% {
-        box-shadow: 0 0 0 0 rgb(196 240 66 / 0.55);
+        box-shadow: 0 0 0 0 rgb(var(--signal) / 0.55);
     }
     100% {
-        box-shadow: 0 0 0 9px rgb(196 240 66 / 0);
+        box-shadow: 0 0 0 9px rgb(var(--signal) / 0);
     }
 }
 

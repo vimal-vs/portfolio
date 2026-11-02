@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.vimalvs.in
+
+# Sitemaps
+Sitemap: https://www.vimalvs.in/sitemap.xml

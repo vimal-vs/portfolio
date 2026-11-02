@@ -70,6 +70,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${sans.variable} ${mono.variable}`}>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try { if (localStorage.getItem('theme') === 'light') document.documentElement.classList.add('light') } catch (_) {}`,
+          }}
+        />
         <link
           rel="canonical"
           href={process.env.NEXT_PUBLIC_BASE_URL || "https://www.vimalvs.in"}
@@ -100,7 +105,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="bg-ink font-sans leading-relaxed antialiased selection:bg-signal selection:text-ink">
+      <body className="bg-ink font-sans leading-relaxed antialiased selection:bg-signal selection:text-paper">
         {children}
         
         <Script
