@@ -5,7 +5,7 @@
         { "name": "Langkawi", "country": "Malaysia", "date": "Aug 2026", "lat": 6.35, "lon": 99.8 }
     ],
     "upcoming": [
-        { "name": "Vietnam", "lat": 16, "lon": 107.8 },
+        { "name": "Vietnam", "detail": "next up", "lat": 16, "lon": 107.8 },
         { "name": "Japan", "lat": 36.2, "lon": 138.3 },
         { "name": "Norway", "lat": 61, "lon": 8.5 },
         { "name": "Italy", "lat": 42.8, "lon": 12.5 },
