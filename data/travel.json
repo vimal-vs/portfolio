@@ -1,0 +1,14 @@
+{
+    "home": { "name": "India", "lat": 22, "lon": 79 },
+    "explored": [
+        { "name": "Kuala Lumpur", "country": "Malaysia", "date": "Aug 2026", "lat": 3.14, "lon": 101.69 },
+        { "name": "Langkawi", "country": "Malaysia", "date": "Aug 2026", "lat": 6.35, "lon": 99.8 }
+    ],
+    "upcoming": [
+        { "name": "Vietnam", "detail": "next up", "lat": 16, "lon": 107.8 },
+        { "name": "Japan", "lat": 36.2, "lon": 138.3 },
+        { "name": "Norway", "lat": 61, "lon": 8.5 },
+        { "name": "Italy", "lat": 42.8, "lon": 12.5 },
+        { "name": "Switzerland", "lat": 46.8, "lon": 8.2 }
+    ]
+}

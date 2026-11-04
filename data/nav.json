@@ -22,5 +22,11 @@
         "title": "Skills",
         "href": "#skills",
         "navID": "skills"
+    },
+    {
+        "id": 5,
+        "title": "Credentials",
+        "href": "#credentials",
+        "navID": "credentials"
     }
 ]

@@ -1,0 +1,75 @@
+[
+  {
+    "id": "associate-software-engineer",
+    "company": "Bajaj Finserv Health",
+    "role": "Associate Software Engineer",
+    "duration": "Jul 2025 — Present",
+    "start": [2025, 7],
+    "link": "https://bajajfinservhealth.in",
+    "highlights": [
+      {
+        "title": "ObservRx",
+        "what": "Internal observability platform",
+        "text": "Built and scaled a proof-of-concept into an internal observability platform used by 14+ teams, with MCP-driven RCA workflows that generate structured insights and raise actionable tickets."
+      },
+      {
+        "title": "PharmaAI",
+        "what": "Conversational AI module",
+        "text": "Implemented Elasticsearch fuzzy search and vectorized ambiguity resolution, improving conversational accuracy and reducing query latency from 8+ seconds to around 4 seconds."
+      },
+      {
+        "title": "Bot Journey Builder",
+        "what": "Tool for configuring chatbot conversation flows",
+        "text": "Designed and developed validation gates, draft vs live diffing, audit trails and RBAC, reducing configuration-related production errors by 95%."
+      },
+      {
+        "title": "Serum WhatsApp Bot",
+        "badge": "Limelight Award 2025",
+        "what": "Healthcare chatbot on WhatsApp",
+        "text": "Built and launched from scratch to production, owning end-to-end journey design, validations and backend integrations for live healthcare workflows."
+      }
+    ],
+    "skills": ["MCP", "Elasticsearch", "Azure", "LiteLLM"]
+  },
+  {
+    "id": "software-engineer-intern",
+    "company": "Bajaj Finserv Health",
+    "role": "Software Engineer Intern",
+    "duration": "Oct 2024 — Jun 2025",
+    "start": [2024, 10],
+    "end": [2025, 6],
+    "link": "https://bajajfinservhealth.in",
+    "highlights": [
+      {
+        "title": "Gateway caching",
+        "text": "Implemented gateway-level caching for listing and master-data services, reducing API traffic by up to 60% while maintaining low latency and correctness."
+      },
+      {
+        "title": "Data integrity",
+        "text": "Led database hygiene by removing 32 obsolete tables across environments, fixing schema inconsistencies, indexing critical fields and resolving data issues causing 5xx errors."
+      }
+    ],
+    "skills": ["Spring Boot", "MySQL", "API Gateway"]
+  },
+  {
+    "id": "full-stack-developer-intern",
+    "company": "TechHive Technology",
+    "role": "Full Stack Developer Intern",
+    "duration": "Aug 2023 — Aug 2024",
+    "start": [2023, 8],
+    "end": [2024, 8],
+    "months": 12,
+    "link": "https://techhivetechnology.com",
+    "highlights": [
+      {
+        "title": "Cab platform dashboard",
+        "text": "Built an admin dashboard for a cab aggregation platform supporting 800+ drivers and 1000+ monthly customers across two applications."
+      },
+      {
+        "title": "College ERP admissions",
+        "text": "Developed and integrated an admissions module handling 1,200+ applications annually, improving conversion through streamlined workflows."
+      }
+    ],
+    "skills": ["React", "Tailwind", "Express", "PostgreSQL"]
+  }
+]
